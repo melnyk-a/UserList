@@ -63,6 +63,12 @@ namespace UserList.Views
             remove { usernameValidator.InputChange -= value; }
         }
 
+        private void Clear()
+        {
+            usernameValidator.Input = null;
+            passwordValidator.Input = null;
+            confirmPasswordValidator.Input = null;
+        }
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
@@ -91,6 +97,7 @@ namespace UserList.Views
 
         public new void Show()
         {
+            Clear();
             ShowDialog();
         }
 

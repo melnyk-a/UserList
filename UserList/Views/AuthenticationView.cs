@@ -51,6 +51,13 @@ namespace UserList.Views
             remove { usernameValidator.InputChange -= value; }
         }
 
+        private void Clear()
+        {
+            usernameValidator.Input = null;
+            passwordValidator.Input = null;
+            confirmPasswordValidator.Input = null;
+        }
+
         private void LoginButton_Click(object sender, EventArgs e)
         {
             Login?.Invoke(sender, e);
@@ -73,6 +80,7 @@ namespace UserList.Views
 
         public new void Show()
         {
+            Clear();
             context.MainForm = this;
             System.Windows.Forms.Application.Run(context);
         }
