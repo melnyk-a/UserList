@@ -55,7 +55,6 @@ namespace UserList.Views
         {
             usernameValidator.Input = null;
             passwordValidator.Input = null;
-            confirmPasswordValidator.Input = null;
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
