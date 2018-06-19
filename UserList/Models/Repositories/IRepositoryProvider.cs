@@ -2,6 +2,6 @@
 {
     internal interface IRepositoryProvider<T>
     {
-      IRepository<T>  Repository { get; }
+        IRepository<T> Repository { get; }
     }
 }
