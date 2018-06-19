@@ -30,8 +30,8 @@
         {
             this.registerButton = new System.Windows.Forms.Button();
             this.loginButton = new System.Windows.Forms.Button();
-            this.passwordValidator = new UserList.Views.InputValidator();
             this.usernameValidator = new UserList.Views.InputValidator();
+            this.passwordValidator = new UserList.Views.InputValidator();
             this.SuspendLayout();
             // 
             // registerButton
@@ -57,16 +57,6 @@
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
-            // passwordValidator
-            // 
-            this.passwordValidator.Input = "";
-            this.passwordValidator.IsValid = false;
-            this.passwordValidator.Location = new System.Drawing.Point(12, 42);
-            this.passwordValidator.Name = "passwordValidator";
-            this.passwordValidator.Size = new System.Drawing.Size(394, 30);
-            this.passwordValidator.TabIndex = 8;
-            this.passwordValidator.Title = "Password:";
-            // 
             // usernameValidator
             // 
             this.usernameValidator.Input = "";
@@ -76,6 +66,17 @@
             this.usernameValidator.Size = new System.Drawing.Size(394, 30);
             this.usernameValidator.TabIndex = 7;
             this.usernameValidator.Title = "Username:";
+            // 
+            // passwordValidator
+            // 
+            this.passwordValidator.Input = "";
+            this.passwordValidator.IsPassword = true;
+            this.passwordValidator.IsValid = false;
+            this.passwordValidator.Location = new System.Drawing.Point(12, 42);
+            this.passwordValidator.Name = "passwordValidator";
+            this.passwordValidator.Size = new System.Drawing.Size(394, 30);
+            this.passwordValidator.TabIndex = 9;
+            this.passwordValidator.Title = "Password:";
             // 
             // AuthenticationView
             // 

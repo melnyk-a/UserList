@@ -73,21 +73,23 @@
             // passwordValidator
             // 
             this.passwordValidator.Input = "";
+            this.passwordValidator.IsPassword = true;
             this.passwordValidator.IsValid = false;
-            this.passwordValidator.Location = new System.Drawing.Point(13, 50);
+            this.passwordValidator.Location = new System.Drawing.Point(12, 49);
             this.passwordValidator.Name = "passwordValidator";
             this.passwordValidator.Size = new System.Drawing.Size(394, 30);
-            this.passwordValidator.TabIndex = 16;
+            this.passwordValidator.TabIndex = 18;
             this.passwordValidator.Title = "Password:";
             // 
             // confirmPasswordValidator
             // 
             this.confirmPasswordValidator.Input = "";
+            this.confirmPasswordValidator.IsPassword = true;
             this.confirmPasswordValidator.IsValid = false;
-            this.confirmPasswordValidator.Location = new System.Drawing.Point(13, 87);
+            this.confirmPasswordValidator.Location = new System.Drawing.Point(12, 85);
             this.confirmPasswordValidator.Name = "confirmPasswordValidator";
             this.confirmPasswordValidator.Size = new System.Drawing.Size(394, 30);
-            this.confirmPasswordValidator.TabIndex = 17;
+            this.confirmPasswordValidator.TabIndex = 19;
             this.confirmPasswordValidator.Title = "Confirm password:";
             // 
             // RegistrationView

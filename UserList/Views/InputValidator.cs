@@ -19,6 +19,11 @@ namespace UserList.Views
             set => textBox.Text = value;
         }
 
+        public bool IsPassword
+        {
+            get => textBox.PasswordChar != ' ';
+            set => textBox.PasswordChar = value ? '*' : ' ';
+        }
         public bool IsValid
         {
             get => isValid;
