@@ -10,8 +10,8 @@ namespace UserList.Models.Objects
             Password = password;
         }
 
-        public String Name { get; }
+        public string Name { get; }
 
-        public String Password { get; }
+        public string Password { get; }
     }
 }
